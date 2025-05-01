@@ -105,6 +105,7 @@ public class AppProperties {
 	private Integer pre_expand_value_sets_default_count = 1000;
 	private Integer pre_expand_value_sets_max_count = 1000;
 	private Integer maximum_expansion_size = 1000;
+	private Boolean fulltext_enabled = false;
 
 	public List<String> getCustomInterceptorClasses() {
 		return custom_interceptor_classes;
@@ -596,6 +597,14 @@ public class AppProperties {
 
 	public Integer getBundle_batch_pool_max_size() {
 		return bundle_batch_pool_max_size;
+	}
+
+	public Boolean getFulltext_enabled() {
+		return fulltext_enabled;
+	}
+
+	public void setFulltext_enabled(Boolean fulltext_enabled) {
+		this.fulltext_enabled = fulltext_enabled;
 	}
 
 	public void setBundle_batch_pool_max_size(Integer bundle_batch_pool_max_size) {

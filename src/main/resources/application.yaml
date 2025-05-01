@@ -225,7 +225,7 @@ hapi:
     #    pre_expand_value_sets_default_count: 1000
     #    pre_expand_value_sets_max_count: 1000
     #    maximum_expansion_size: 1000
-
+    fulltext_enabled: true
     logical_urls:
       - http://terminology.hl7.org/*
       - https://terminology.hl7.org/*

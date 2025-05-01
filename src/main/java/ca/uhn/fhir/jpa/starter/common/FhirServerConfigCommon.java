@@ -252,6 +252,7 @@ public class FhirServerConfigCommon {
 		// Parallel Batch GET execution settings
 		jpaStorageSettings.setBundleBatchPoolSize(appProperties.getBundle_batch_pool_size());
 		jpaStorageSettings.setBundleBatchPoolSize(appProperties.getBundle_batch_pool_max_size());
+		jpaStorageSettings.setHibernateSearchIndexFullText(appProperties.getFulltext_enabled());
 
 		storageSettings(appProperties, jpaStorageSettings);
 		return jpaStorageSettings;
